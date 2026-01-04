@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Viewer</title>
+    <link rel="stylesheet" href="reader.css">
+</head>
+<body>
+    <button id="menu_toggle" title="Menu">☰</button>
+    <nav id="site_menu" aria-hidden="true">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/menus/Reader/reader.html">Reader</a></li>
+        <li><a href="/menus/Editor/editor.html">Editor</a></li>
+        <li><a href="https://github.com/wattox00/planseq" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+      <div class="menu_footer"><div><button id="theme_toggle">Theme</button></div>©2026 Planseq.</div>
+    </nav>
+    <div class="topbar">
+        <div id="drop_hint">
+            <button id="import_btn">Import Roadmap (.json)</button>
+            Or Drag and Drop
+        </div>
+        <input id="file_input" type="file" accept="application/json" style="display:none">
+    </div>
+    <div id="workspace">
+        <div id="viewport">
+            <div id="canvas">
+                <svg id="connections" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--arrow)" />
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="overall_progress"></div>
+            <div id="node_info">No node selected</div>
+            <hr>
+            <h4></h4>
+            <div id="tasks_list"></div>
+        </div>
+    </div>
+<script src="reader.js"></script>
+</body>
+</html>

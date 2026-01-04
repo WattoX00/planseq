@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planseq</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+<button id="menu_toggle" title="Menu">☰</button>
+<nav id="site_menu" aria-hidden="true">
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/menus/Reader/reader.html">Reader</a></li>
+    <li><a href="/menus/Editor/editor.html">Editor</a></li>
+    <li><a href="https://github.com/wattox00/planseq" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+  <div class="menu_footer"><div><button id="theme_toggle">Theme</button></div>©2026 Planseq.</div>
+</nav>
+<div id="main">
+  <h1 id="logo" class="typewriter">Planseq</h1>
+    <div id="how_to_use_it">
+        <div id="macos-window">
+            <div class="window-title-bar">
+              <div class="window-dots">
+                 <div class="window-dot red"></div>
+                 <div class="window-dot yellow"></div>
+                 <div class="window-dot green" id="expand-btn"></div>
+              </div>
+
+              <div class="window-title">https://wattox00.github.io/planseq</div>
+            </div>
+
+            <div class="window-content">
+                <ul>
+                  <li>
+                    <strong>Create a New Sequence:</strong>
+                    Open the <a href="/menus/Editor/editor.html">Editor</a>.
+                  </li>
+
+                  <li>
+                    <strong>Add Steps:</strong>
+                    Click the <em>Add Root Node</em> button to begin building your sequence.
+                  </li>
+
+                  <li>
+                    <strong>Edit Steps:</strong>
+                    Select a node to modify its details.
+                  </li>
+
+                  <li>
+                    <strong>Reorder Steps:</strong>
+                    Drag and drop nodes to rearrange them freely.
+                  </li>
+
+                  <li>
+                    <strong>Save Your Sequence:</strong>
+                    Click <em>Export</em> to save your roadmap.
+                  </li>
+
+                  <li>
+                    <strong>View or Share:</strong>
+                    Open the <a href="/menus/Reader/reader.html">Reader</a> to import or share your roadmap.
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
