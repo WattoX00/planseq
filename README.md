@@ -166,7 +166,7 @@ If any rule cannot be satisfied, output {} instead of guessing
 Treat this as a strict serialization format matching real exports, not a conceptual roadmap.
 ```
 
-This will give you a generaly fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq) page.
+This will give you a generaly fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq/menus/Editor/editor.html) page.
 JUST DON'T FORGET TO CHANGE THE `PLACEHOLDER` AT THE START!
 
 ## License
