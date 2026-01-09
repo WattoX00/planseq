@@ -417,6 +417,7 @@ button:focus {
     padding:8px;
     color:var(--text);
     text-decoration:none;
+    font-weight: 600;
 }
 
 #site_menu a:hover {

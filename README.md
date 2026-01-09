@@ -1,7 +1,6 @@
 
 # Roadmap Creator - [Planseq](https://wattox00.github.io/planseq)
 
-A brief description of what this project does and who it's for
 
 <video src="assets/demo.mp4" autoplay loop muted playsinline></video>
 
