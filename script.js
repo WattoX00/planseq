@@ -1,10 +1,9 @@
+const windowEl = document.getElementById("macos-window");
+const expandBtn = document.getElementById("expand-btn");
 
-  const windowEl = document.getElementById("macos-window");
-  const expandBtn = document.getElementById("expand-btn");
-
-  expandBtn.addEventListener("click", () => {
-    windowEl.classList.toggle("expanded");
-  });
+expandBtn.addEventListener("click", () => {
+windowEl.classList.toggle("expanded");
+});
 
 
 (function(){
