@@ -1,8 +1,14 @@
 
 # Roadmap Creator - [Planseq](https://wattox00.github.io/planseq)
 
-
-<video src="https://github.com/WattoX00/planseq/blob/main/assets/demo.mp4" autoplay loop muted playsinline></video>
+<video
+  src="https://github.com/user-attachments/assets/5448a532-423c-4ffa-b9d9-d312d83c925d"
+  autoplay
+  loop
+  muted
+  playsinline
+  width="600">
+</video>
 
 🔗 [Try the app](https://wattox00.github.io/planseq)
 
