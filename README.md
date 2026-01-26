@@ -1,6 +1,7 @@
 # Roadmap Creator - [Planseq](https://wattox00.github.io/planseq)
 
-[![Website](https://img.shields.io/badge/website-online-success?style=for-the-badge&logo=github)](https://wattox00.github.io/planseq)
+[![Website](https://img.shields.io/badge/website-online-success?style=for-the-badge&logoUrl=https://raw.githubusercontent.com/WattoX00/planseq/main/assets/planseq_logo.png&logoWidth=20)](https://wattox00.github.io/planseq)
+
 [![Prompt](https://img.shields.io/badge/help-ai_prompt-blue?style=for-the-badge)](#aiprompt)
 ![Status](https://img.shields.io/badge/status-stable-blue?style=for-the-badge)
 [![License](https://img.shields.io/github/license/wattox00/todol?style=for-the-badge)](https://github.com/WattoX00/planseq/blob/main/LICENSE)
@@ -128,6 +129,11 @@ Export
 
 # AI prompt
 ## (if you don't want to mess with the editor)
+
+> [!CAUTION]
+> This will give you a generaly fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq/menus/Editor/editor.html) page.
+> JUST DON'T FORGET TO CHANGE THE `PLACEHOLDER` AT THE START!
+
 ```
 Generate a  `PLACEHOLDER` roadmap serialized in the exact same JSON schema and structural conventions as planseq's app's existing roadmap exports.
 
@@ -173,10 +179,6 @@ Safety rule
 If any rule cannot be satisfied, output {} instead of guessing
 Treat this as a strict serialization format matching real exports, not a conceptual roadmap.
 ```
-
-> [!CAUTION]
-> This will give you a generaly fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq/menus/Editor/editor.html) page.
-> JUST DON'T FORGET TO CHANGE THE `PLACEHOLDER` AT THE START!
 
 ## License
 
