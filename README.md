@@ -126,8 +126,8 @@ Export
 
 </details>
 
-# AI prompt
-## (if you don't want to mess with the editor)
+## AI prompt
+### (if you don't want to mess with the editor)
 
 > [!CAUTION]
 > This will give you a generaly fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq/menus/Editor/editor.html) page.
