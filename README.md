@@ -1,11 +1,18 @@
-
 # Roadmap Creator - [Planseq](https://wattox00.github.io/planseq)
+
+[![Website](https://img.shields.io/badge/website-online-success?style=for-the-badge&logo=github)](https://wattox00.github.io/planseq)
+[![Prompt](https://img.shields.io/badge/help-ai_prompt-blue?style=for-the-badge)](#aiprompt)
+![Status](https://img.shields.io/badge/status-stable-blue?style=for-the-badge)
+[![License](https://img.shields.io/github/license/wattox00/todol?style=for-the-badge)](https://github.com/WattoX00/planseq/blob/main/LICENSE)
 
 [demo](https://github.com/user-attachments/assets/5448a532-423c-4ffa-b9d9-d312d83c925d)
 
 # [Try the app](https://wattox00.github.io/planseq)
 
 ## JSON
+
+<details>
+<summary>Click to expand</summary>
 
 This document describes the structure of a JSON export representing a roadmap with hierarchical nodes, tasks, and visual layout metadata.
 
@@ -117,7 +124,10 @@ Export
      └─ Layout (position)
 ```
 
-# AI prompt (if you don't want to mess with the editor)
+</details>
+
+# AI prompt
+## (if you don't want to mess with the editor)
 ```
 Generate a  `PLACEHOLDER` roadmap serialized in the exact same JSON schema and structural conventions as planseq's app's existing roadmap exports.
 
@@ -164,8 +174,9 @@ If any rule cannot be satisfied, output {} instead of guessing
 Treat this as a strict serialization format matching real exports, not a conceptual roadmap.
 ```
 
-This will give you a generaly fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq/menus/Editor/editor.html) page.
-JUST DON'T FORGET TO CHANGE THE `PLACEHOLDER` AT THE START!
+> [!CAUTION]
+> This will give you a generaly fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq/menus/Editor/editor.html) page.
+> JUST DON'T FORGET TO CHANGE THE `PLACEHOLDER` AT THE START!
 
 ## License
 
