@@ -1,7 +1,6 @@
 # Roadmap Creator - [Planseq](https://wattox00.github.io/planseq)
 
-[![Website](https://img.shields.io/badge/website-online-success?style=for-the-badge&logoUrl=https://raw.githubusercontent.com/WattoX00/planseq/main/assets/planseq_logo.png&logoWidth=20)](https://wattox00.github.io/planseq)
-
+[![Website](https://img.shields.io/badge/website-online-success?style=for-the-badge&logo=github)](https://wattox00.github.io/planseq)
 [![Prompt](https://img.shields.io/badge/help-ai_prompt-blue?style=for-the-badge)](#aiprompt)
 ![Status](https://img.shields.io/badge/status-stable-blue?style=for-the-badge)
 [![License](https://img.shields.io/github/license/wattox00/todol?style=for-the-badge)](https://github.com/WattoX00/planseq/blob/main/LICENSE)
