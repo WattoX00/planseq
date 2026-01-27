@@ -1,4 +1,4 @@
-# Roadmap Creator - [Planseq](https://wattox00.github.io/planseq)
+# [Planseq](https://wattox00.github.io/planseq) - Roadmap Creator and Viewer
 
 [![Website](https://img.shields.io/badge/website-online-success?style=for-the-badge&logo=github)](https://wattox00.github.io/planseq)
 [![Prompt](https://img.shields.io/badge/help-ai_prompt-blue?style=for-the-badge)](#aiprompt)
@@ -9,7 +9,7 @@
 
 # [Try the app](https://wattox00.github.io/planseq)
 
-## JSON
+## 🔑 JSON
 
 <details>
 <summary>Click to expand</summary>
@@ -126,7 +126,7 @@ Export
 
 </details>
 
-## AI prompt
+## 🧠 AI prompt
 ### (if you don't want to mess with the editor)
 
 > [!CAUTION]
@@ -179,6 +179,21 @@ If any rule cannot be satisfied, output {} instead of guessing
 Treat this as a strict serialization format matching real exports, not a conceptual roadmap.
 ```
 
-## License
+## ❤️ Support
 
-This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+If this project saved you time, taught you something, or made your day a little easier,
+you can support its development here:
+
+👉 **[Buy me a coffee via PayPal](https://www.paypal.com/paypalme/wattox)**
+
+Your support helps keep the project:
+- Actively maintained
+- Continuously improved
+- Free and open source
+
+Thanks for being part of the community 🤝
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for full details.
