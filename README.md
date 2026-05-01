@@ -126,7 +126,7 @@ Export
 
 </details>
 
-## 🧠 AI prompt
+## AI prompt
 ### (if you don't want to mess with the editor)
 
 > [!CAUTION]
