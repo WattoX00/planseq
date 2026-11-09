@@ -275,7 +275,12 @@
             const label = document.createElement('div');
 
             if (t.link) {
-                const a = document.createElement('a'); a.href = t.link; a.textContent = t.name || t.link; a.target='_blank';
+                const a = document.createElement('a');
+                a.href = t.link;
+                a.style.textDecoration = 'none';
+                a.style.color = '#2563EB';
+                a.textContent = t.name || t.link;
+                a.target='_blank';
                 label.appendChild(a);
             } else {
                 label.textContent = t.name || '(no name)';
