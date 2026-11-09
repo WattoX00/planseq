@@ -130,53 +130,51 @@ Export
 ### (if you don't want to mess with the editor)
 
 > [!CAUTION]
-> This will give you a generaly fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq/menus/Editor/editor.html) page.
+> This will give you a generally fine roadmap, which you can later still edit on the [`EDITOR`](https://wattox00.github.io/planseq/menus/Editor/editor.html) page.
 > JUST DON'T FORGET TO CHANGE THE `PLACEHOLDER` AT THE START!
 
 ```
-Generate a  `PLACEHOLDER` roadmap serialized in the exact same JSON schema and structural conventions as planseq's app's existing roadmap exports.
+Create a useful, well-structured `PLACEHOLDER` roadmap for Planseq. Cover the important concepts in a sensible learning or progression order, with enough detail to be actionable.
 
-ABSOLUTE RULES (DO NOT VIOLATE):
-Output
-Output ONLY valid JSON
-No markdown, comments, or explanations
-Root object
-Must contain exactly:
-exportedAt (ISO timestamp string)
-scale (number)
-translate (object with numeric x and y)
-nodes (object)
-Nodes dictionary
-Keys MUST be numeric strings: "0", "1", "2", …
-Keys MUST be sequential with no gaps
-Each key MUST match the node’s id
-Node object (NO EXTRA FIELDS)
-Each node MUST contain exactly:
-id (string, numeric, matches its key)
-name (string)
-desc (string)
-parent (string ID or null)
-tasks (array)
-childs (array of string IDs)
-position (object with numeric x and y)
-Tree structure rules
-There MUST be exactly one root node with "parent": null
-The roadmap MUST be primarily linear/progressive, not a flat category tree
-Each node should usually have one child, branching only when necessary
-All childs IDs MUST exist in nodes
-Each child’s parent MUST correctly reference its parent node
-Tasks
-Each task MUST contain:
-name (string)
-link (string, may be empty)
-desc (string, may be empty)
-completed (boolean, default false)
-Layout rules
-Positions must be compact and incremental, similar to manually arranged nodes
-Avoid extreme coordinate values
-Safety rule
-If any rule cannot be satisfied, output {} instead of guessing
-Treat this as a strict serialization format matching real exports, not a conceptual roadmap.
+OUTPUT FORMAT
+- Output ONLY one valid JSON object. Do not include markdown, comments, or explanations.
+- Match this exact root schema, with no extra fields:
+  - `exportedAt`: ISO 8601 timestamp string
+  - `scale`: number; use 1
+  - `translate`: object with numeric `x` and `y`; use 0 for both
+  - `nodes`: object containing the nodes
+
+NODE SCHEMA
+- Use sequential numeric string keys starting at `"0"` with no gaps. Each key must equal that node's `id`.
+- Each node must have exactly these fields:
+  - `id`: numeric string matching its key
+  - `name`: concise node title
+  - `desc`: brief, specific explanation of the topic or milestone
+  - `parent`: parent node ID, or `null` for the root
+  - `tasks`: array of tasks
+  - `childs`: array of direct child node IDs
+  - `position`: object with numeric `x` and `y`
+- Each task must have exactly these fields:
+  - `name`: clear, actionable task
+  - `link`: relevant, known URL, or `""` if you cannot provide a reliable one
+  - `desc`: brief detail, or `""` if unnecessary
+  - `completed`: `false`
+
+ROADMAP STRUCTURE
+- Create exactly one root node. Make the roadmap a connected tree, not a list of unrelated categories.
+- Organize it as a clear progression, but use branches to show parallel topics, alternatives, or related subskills where appropriate. Do not force everything into one long chain, and do not create branches just for decoration.
+- Use a sensible depth: group related tasks under focused nodes, and split a node when its scope becomes too broad.
+- Every child ID in `childs` must exist, and each child's `parent` must point back to that node. Each non-root node must appear exactly once as a child.
+- Give each node a small set of useful tasks (usually 2-5); avoid vague or duplicate tasks. Keep titles and descriptions concise enough to scan in the UI.
+
+SCREEN LAYOUT
+- `position.x` and `position.y` are the node's top-left coordinates in canvas pixels, not its center.
+- Lay out the tree in a clear, consistent direction (top-to-bottom or left-to-right). Put the root at the beginning, descendants in later rows or columns, and sibling branches side by side.
+- Plan for nodes to be about 220 px wide. Leave at least 40 px between neighboring nodes and enough vertical space for clear separation; keep nodes and connector lines from overlapping.
+- Align positions to a consistent 20 px grid. Keep spacing between levels consistent, align related siblings, and balance branches around their parent instead of stacking every node on one straight line.
+- Keep the full roadmap reasonably compact and within positive canvas coordinates. Start around x=60, y=60; do not rely on zoom or pan to make nodes visible.
+
+Check the JSON syntax, schema, references, hierarchy, and layout before responding. Never invent fields or IDs; do not return `{}` as a fallback.
 ```
 
 ## ❤️ Support
